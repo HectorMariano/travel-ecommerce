@@ -1,0 +1,116 @@
+.Mensaje{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+}
+
+#TablaDestino{
+    float: right;
+    width: 78%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+#TablaDestino table{
+    border-spacing: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#TablaDestino table td{
+    cursor: pointer;
+    height: 100%;
+    width: 32%;
+    border-radius: 15px;
+    position: relative;
+    background-color: white;
+}
+#TablaDestino table td:hover{
+    background-color: white;
+    transform:scale(1.2,1.2);
+    color: black;
+    z-index: 3;
+    font-size: clamp(5px, 20px, 28px);
+}
+#TablaDestino table td img{
+    border-radius: 15px;
+    height: 300px;
+
+    width: 100%;
+}
+#TablaDestino table td img:hover{
+    opacity: 0.10;
+    transition: opacity 500ms;
+    font-size: clamp(5px, 20px, 28px);
+}
+#TablaDestino table td div{
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:3%;
+    margin:0;
+    max-height: 80%;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(0.625rem, -0.0893rem + 7.1429vw, 1.25rem);
+}
+#TablaDestino table td a{
+    text-decoration: none;
+    color: rgb(59, 93, 165);
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(12px, 20px, 26px);
+}
+
+
+#NavegadorLateral{
+    float:left;
+    height: auto;
+    width: 15%;
+    margin-left: 2%;
+    margin-top: 10%;  
+    text-align: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(0.625rem, -0.0893rem + 7.1429vw, 1.25rem);
+
+    padding: 5px;
+    border: PowderBlue 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+}
+#NavegadorLateral a{
+    text-decoration: none;
+    color: black;
+}
+#NavegadorLateral a:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+#BarraBusqueda input{
+    font-family: 'Raleway', sans-serif;
+    width: 50%;
+    font-size: 18px;
+}
+#BarraBusqueda select{
+    font-family: 'Raleway', sans-serif;
+    width: 40%;
+    padding-left: 5%;
+    font-size: 18px;
+    height: 22px;
+    margin-bottom: 2px;
+}
+#BarraBusqueda option{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background-image: url(Imagenes/FondoLogin.jpg);
+    width: 98%;
+    height: fit-content;
+    position: absolute;
+    background-position: center center;
+    background-attachment: fixed;
+}
