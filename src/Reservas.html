@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CETI VIAJES</title>
+
+    <link rel="shortcut icon" href="Imagenes/621px-CETI_Logo.png">
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <style>
+
+        #TablaDestino{
+            float: right;
+            width: 78%;
+            margin-top: 2%;
+            margin-right: 2%;
+        }
+        #TablaDestino table{
+            border-spacing: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        #TablaDestino table td{
+            cursor: pointer;
+            height: 100%;
+            width: 32%;
+            border-radius: 15px;
+            position: relative;
+        }
+        #TablaDestino table td:hover{
+            background-color: white;
+            transform:scale(1.2,1.2);
+            color: black;
+            z-index: 3;
+            font-size: clamp(5px, 20px, 28px);
+        }
+        #TablaDestino table td img{
+            border-radius: 15px;
+            height: 300px;
+
+            width: 100%;
+        }
+        #TablaDestino table td img:hover{
+            opacity: 0.10;
+            transition: opacity 500ms;
+            font-size: clamp(5px, 20px, 28px);
+        }
+        #TablaDestino table td div{
+            overflow: hidden;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index:-1;
+            padding:3%;
+            margin:0;
+            max-height: 80%;
+
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(0.625rem, -0.0893rem + 7.1429vw, 1.25rem);
+        }
+        #TablaDestino table td a{
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(12px, 20px, 26px);
+        }
+
+        
+        #NavegadorLateral{
+            float:left;
+            height: auto;
+            width: 15%;
+            margin-left: 2%;
+            margin-top: 10%;  
+            text-align: center;
+
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(0.625rem, -0.0893rem + 7.1429vw, 1.25rem);
+
+            padding: 5px;
+            border: PowderBlue 5px double;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #NavegadorLateral a{
+            text-decoration: none;
+            color: black;
+        }
+        #NavegadorLateral a:hover{
+            cursor: pointer;
+            color: blue;
+        }
+
+        #BarraBusqueda input{
+            font-family: 'Raleway', sans-serif;
+            width: 100%;
+            font-size: 18px;
+        }
+
+    </style>
+
+
+</head>
+
+<nav>
+    <ul>
+        <li style="float: left"><p id="Titulo">CETI VIAJES</p></li>
+        <li><a href="InicioSesion.html">Iniciar Sesión</a></li>
+        <li><a href="Registro.html">Registro</a></li>
+        <li><a href="Reservas.html">Reservar Ahora</a></li>
+        <li><a href="index.html">Inicio</a></li>
+    </ul>
+</nav>  
+
+<body>
+    <section class="EspacioVacio"></section>
+    <section id="TablaDestino">
+
+
+      <table>
+            <tr>
+                <td>
+                    <div><br><br>
+                        La Huasteca Potosina es un amplio espacio del estado de San Luis Potosí,
+                        que reúne un conjunto de municipios y atracciones, como si estuvieras en un pequeño país,
+                        presto a disfrutar de todos los encantos posibles
+                        <br><br><br>
+                        Precio por Noche: $2500
+                    </div>
+
+                    <img src="Destinos/Img_1.jpg" alt="Destino 1"><br>
+                    <a href="">Huasteca Potosina - San Luis Potosí</a>
+                </td>
+                <td>
+                    <div><br><br>
+                        También llamada Laguna de los Siete Colores es impactante por su belleza, 
+                        sus rápidos, sus estromatolitos y muy especialmente por sus embrujadores cenotes.
+                        La laguna es también sitio de moda para la motonáutica y otros divertimientos acuáticos. 
+                        <br><br>
+                        Precio por Noche: $2800
+                    </div>
+                    
+                    <img src="Destinos/Img_2.jpg" alt="Destino 2"><br>
+                    <a href="">Bacalar - Quintana Roo</a>
+                </td>
+                <td>
+                    <div><br><br>
+                        Una maravilla natural del Estado de Oaxaca, Las cataratas pétreas se formaron a lo largo 
+                        de los milenios, mediante el goteo del agua saturada de carbonatos, de la misma manera 
+                        que se erigen las estalactitas y estalagmitas en las cavernas.
+                        <br><br>
+                        Precio por Noche: $1800
+                    </div>
+
+                    <img src="Destinos/Img_3.jpg" alt="Destino 3"><br>
+                    <a href="">Cascada Hierve Agua - Oaxaca</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div><br><br>
+                        El conglomerado arquitectónico y escultórico se encuentra en un hermoso predio de más de
+                        300 mil metros cuadrados y las piezas artísticas están admirablemente integradas a cascadas,
+                        pozas, jardines y otros componentes del entorno natural
+                        <br><br>
+                        Precio por Noche: $3200
+                    </div>
+
+                    <img src="Destinos/Img_4.jpg" alt="Destino 4"><br>
+                    <a href="">Pozas de Xilitla - San Luis Potosí</a>
+                </td>
+                <td>
+                    <div><br><br>
+                        Son dos islas nayaritas deshabitadas, llamadas Isla Redonda e Isla Larga. Son frecuentadas
+                        por sus hermosas playas, ideales para el buceo, el snorkel y la observación de la vida submarina.
+                        <br><br>
+                        Precio por Noche: $4100
+                    </div>
+
+                    <img src="Destinos/Img_5.jpg" alt="Destino 5"><br>
+                    <a href="">Islas Marietas - Nayarit</a>
+                </td>
+                <td>
+                    <div><br><br>
+                        La Riviera Maya, en el Caribe mexicano, es uno de los principales corredores mundiales del turismo 
+                        de playa y su corazón es Playa del Carmen. La ciudad del estado de Quintana Roo, frente a la isla de Cozumel,
+                        cuenta con una infraestructura hotelera de primer orden 
+                        <br><br>
+                        Precio por Noche: $5000
+                    </div>
+                    <img src="Destinos/Img_6.jpg" alt="Destino 6"><br>
+                    <a href="">Playa del Carmen - Mar Caribe</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div><br><br>
+                        Los ríos Otulún, Shumuljá y Tulijá, en el municipio chiapaneco de Tumbalá, forman acantilados verticales
+                        en sus cañones, por los que se desprenden unas bellas cataratas blaquiazules, las cascadas Agua Azul.
+                        <br><br>
+                        Precio por Noche: $3200
+                    </div>
+                    
+                    <img src="Destinos/Img_7.jpg" alt="Destino 7"><br>
+                    <a href="">Cascadas Agua Azul - Chiapas</a>
+                </td>
+                <td>
+                    <div><br><br>
+                        En Michoacán tiene dos grandes santuarios, la montaña de El Rosario y Sierra Chincua. Los
+                        observadores de la vida silvestre se las arreglan para ver a estos curiosos insectos 
+                        que se hospedan en México entre noviembre y marzo
+                        <br><br>
+                        Precio por Noche: $3200
+                    </div>
+
+                    <img src="Destinos/Img_8.jpg" alt="Destino 8"><br>
+                    <a href="">Recinto de Mariposas Monarca - Michoacan</a>
+                </td>
+                <td>
+                    <div><br><br>
+                        Es una ciudad de origen maya en el estado de Chiapas, cuyos principales atractivos 
+                        son sus yacimientos arqueológicos y sus hermosas cascadas. Buena parte de la zona
+                        arqueológica está aún por desenterrar.
+                        <br><br>
+                        Precio por Noche: $4600
+                    </div>
+
+                    <img src="Destinos/Img_9.jpg" alt="Destino 9"><br>
+                    <a href="">Palenque - Chiapas</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div><br><br>
+                        Teotihuacán es "el lugar donde los hombres se convierten en dioses" en la lengua
+                        náhuatl y así te sentirás cuando asciendas a la Pirámide del Sol o a la Pirámide
+                        de la Luna y observes desde las alturas La Ciudadela
+                        <br><br>
+                        Precio por Noche: $6100
+                    </div>
+
+                    <img src="Destinos/Img_10.jpg" alt="Destino 10"><br>
+                    <a href="">Píramides de Teotihuacán - Cuidad de México</a>
+                </td>
+                <td>
+                    <div><br><br>
+                        Ningún estado simboliza mejor las tradiciones mexicanas que Jalisco. 
+                        Es el territorio donde se juntan en su máxima legitimidad la bebida nacional,
+                        el tequila; la música nacional, el mariachi; y el espectáculo folclórico nacional, la charrería
+                        <br><br>
+                        Precio por Noche: $6100
+                    </div>
+
+                    <img src="Destinos/Img_11.jpg" alt="Destino 11"><br>
+                    <a href="">Tequila - Jalisco</a>
+                </td>
+                <td>
+                    <div><br><br>
+                        Engastado en la montaña como una joya valiosa, está un pueblo de casas blancas, Taxco de Alarcón,
+                        que maravilla al turista desde la distancia por su bella e impecable arquitectura
+                        <br><br>
+                        Precio por Noche: $3500
+                    </div>
+                    
+                    <img src="Destinos/Img_12.jpg" alt="Destino 12"><br>
+                    <a href="">Taxco - Guerrero</a>
+                </td>
+            </tr>
+
+        </table>
+    </section>
+
+    <section id="NavegadorLateral">
+        <h4>Filtrar Resultados</h4><br>
+        <a href="#">- Mejor Puntuación</a><br>
+        <a href="">- Disponibilidad</a><br>
+        <a href="">- Ubicación</a><br>
+        <a href="">- Precio de Viaje</a><br><br>
+
+        <form id="BarraBusqueda">
+            <input type="search" name="busqueda" placeholder="Estado, Municipio, ...">
+            <input type="submit" value="Buscar" style="font-size: 16px;">
+        </form>
+
+    </section>
+
+
+</body>
+
+<footer>
+    <p>Hecho por Héctor Mariano Padilla Rodríguez - 21310386</p>
+</footer>
+
+</html>

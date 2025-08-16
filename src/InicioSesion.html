@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CETI VIAJES</title>
+
+    <link rel="shortcut icon" href="Imagenes/621px-CETI_Logo.png">
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+
+        #Fondo{
+            width: 50%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            background-image: url("Imagenes/Fondo_Azul.png");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 2%;
+            padding-top: .5%;
+        }
+
+        form label{
+            font-size: clamp(26px, 28px, 30px);
+            font-family: 'Dosis', sans-serif;   
+        }
+        form input{
+            width: 30%;
+            border: .5px solid #ffffff;
+            padding-left: 1%;
+            border-radius: 12px;
+            font-size: clamp(24px, 26px, 28px);
+            font-family: 'Dosis', sans-serif;
+        }
+        form button{
+            width: 31%;
+            border: 2px solid #ffffff;
+            background-color: #79f4fb;
+            font-size: clamp(18px, 22px, 26px);
+            font-family: 'Dosis', sans-serif;
+            cursor: pointer;
+        }
+        h3{
+            font-family: 'Poppins', sans-serif ;
+            font-size: 24px;
+        }
+
+    </style>
+
+</head>
+
+<nav>
+    <ul>
+        <li style="float: left"><p id="Titulo">CETI VIAJES</p></li>
+        <li><a href="InicioSesion.html">Iniciar Sesión</a></li>
+        <li><a href="Registro.html">Registro</a></li>
+        <li><a href="Reservas.html">Reservar Ahora</a></li>
+        <li><a href="index.html">Inicio</a></li>
+    </ul>
+</nav>
+
+<body>
+    <section class="EspacioVacio"></section>
+
+    <section id="Fondo">
+
+        <h3>Ingrese sus Datos para Iniciar Sesión</h3>
+
+        <form style="padding-left: 4%;">
+            <label>Nombre de Usuario:</label><br>
+            <input type="text" id="Nombre_User" name="Nombre_User" placeholder="Heptor123" required><br><br>
+
+            <label>Contraseña:</label><br>
+            <input type="password" id="Primer_N" name="Primer_N" placeholder="***********" required><br><br><br>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        
+        <br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+</body>
+
+<footer>
+    <p>Hecho por Héctor Mariano Padilla Rodríguez - 21310386</p>
+</footer>
+
+</html>
